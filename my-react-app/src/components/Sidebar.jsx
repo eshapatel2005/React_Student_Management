@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
-    // Search input for filtering students dynamically
+    // Sidebar navigation for dashboard pages 
     <div className="w-52 bg-gray-200 min-h-screen p-4">
       <h2 className="font-bold mb-4">Dashboard</h2>
 
