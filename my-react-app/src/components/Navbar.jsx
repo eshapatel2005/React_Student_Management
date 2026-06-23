@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
+    //Navbar component for app navigation
     <nav className="bg-blue-600 text-white p-4">
       <div className="flex gap-5">
         <Link to="/">Home</Link>
