@@ -1,5 +1,6 @@
 function SearchBar({ search, setSearch }) {
   return (
+    // Search input for filtering students dynamically
     <input
       type="text"
       placeholder="Search Student..."
