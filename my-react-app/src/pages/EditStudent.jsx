@@ -4,6 +4,8 @@ import { StudentContext } from "../context/StudentContext";
 import { toast } from "react-toastify";
 
 function EditStudent() {
+
+  //Components for editing existing students details
   const { id } = useParams();
   const navigate = useNavigate();
 
