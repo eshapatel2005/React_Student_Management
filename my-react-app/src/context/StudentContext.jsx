@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 
 export const StudentContext = createContext();
+// Provides global state management for student data including CRUD operations using Context API
 
 function StudentProvider({ children }) {
   const [students, setStudents] = useState(() => {
