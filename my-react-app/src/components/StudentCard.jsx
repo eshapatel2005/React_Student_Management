@@ -5,6 +5,7 @@ import { deleteStudent } from "../services/studentService";
 import { Link } from "react-router-dom";
 
 function StudentCard({ student }) {
+  // Component to display individual student details in a card format
   const { students, setStudents } = useContext(StudentContext);
 
   const handleDelete = async (id) => {
