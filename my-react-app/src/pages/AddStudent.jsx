@@ -5,6 +5,7 @@ import { createStudent } from "../services/studentService";
 import { useNavigate } from "react-router-dom";
 
 function AddStudent() {
+  // Component for adding a new student to the system
   const { students, setStudents } = useContext(StudentContext);
   const navigate = useNavigate();
 
