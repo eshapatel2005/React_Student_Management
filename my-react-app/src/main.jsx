@@ -6,15 +6,18 @@ import { BrowserRouter } from "react-router-dom";
 import StudentProvider from "./context/StudentContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import AuthProvider from "./context/AuthContext";
 
 
 createRoot(document.getElementById('root')).render(
  <StrictMode>
     <BrowserRouter>
-      <StudentProvider>
-        <App />
-        <ToastContainer position="top-right" />
-      </StudentProvider>
-    </BrowserRouter>
+  <AuthProvider>
+    <StudentProvider>
+      <App />
+      <ToastContainer position="top-right" />
+    </StudentProvider>
+  </AuthProvider>
+</BrowserRouter>
   </StrictMode>
 )

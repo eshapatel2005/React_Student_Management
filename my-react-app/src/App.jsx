@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import AppRoutes from "./routes/AppRoutes";
 
 function App() {
+  const location = useLocation();
+
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem("theme") === "dark";
   });
@@ -22,13 +26,22 @@ function App() {
   return (
     <div
       className={`min-h-screen ${
-        darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
+        darkMode
+          ? "bg-gray-900 text-white"
+          : "bg-white text-black"
       }`}
     >
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      {location.pathname !== "/login" && (
+        <Navbar
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+        />
+      )}
 
       <div className="flex">
-        <Sidebar darkMode={darkMode} />
+        {location.pathname !== "/login" && (
+          <Sidebar darkMode={darkMode} />
+        )}
 
         <div className="p-5 w-full">
           <AppRoutes />
