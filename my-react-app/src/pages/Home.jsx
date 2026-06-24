@@ -44,7 +44,7 @@ function Home() {
           </p>
         ) : (
           <ul className="space-y-3">
-            {students.slice(0, 5).map((student, index) => (
+            {students.slice().map((student, index) => (
               <li
                 key={index}
                 className="flex justify-between items-center p-3 bg-gray-100 rounded-lg"
