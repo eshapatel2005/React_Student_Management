@@ -15,7 +15,7 @@ createRoot(document.getElementById('root')).render(
   <AuthProvider>
     <StudentProvider>
       <App />
-      <ToastContainer position="top-right" />
+      <ToastContainer position="top-center" />
     </StudentProvider>
   </AuthProvider>
 </BrowserRouter>
