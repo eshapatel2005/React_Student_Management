@@ -4,6 +4,8 @@ import { StudentContext } from "../context/StudentContext";
 function Home() {
   const { students } = useContext(StudentContext);
 
+  //Home page displaying the student dashboard
+
   return (
       <div className="min-h-screen p-6">
       {" "}
