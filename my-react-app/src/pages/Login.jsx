@@ -4,6 +4,9 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 function Login() {
+
+  //Login page for user authentication
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
