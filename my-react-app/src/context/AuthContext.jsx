@@ -3,6 +3,8 @@ import { createContext, useState } from "react";
 export const AuthContext = createContext();
 
 function AuthProvider({ children }) {
+
+  //AuthProvider manages global authentication state
   const [isLoggedIn, setIsLoggedIn] = useState(
     localStorage.getItem("isLoggedIn") === "true"
   );
