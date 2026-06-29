@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 function Login() {
-
   //Login page for user authentication
 
   const [email, setEmail] = useState("");
@@ -31,7 +30,7 @@ function Login() {
     <div className="min-h-screen flex justify-center items-center bg-gray-200">
       <form
         onSubmit={handleSubmit}
-        className="bg-white px-10 py-14 rounded-xl shadow-lg w-[450px]"
+        className="bg-white text-black px-10 py-14 rounded-xl shadow-lg w-[450px]"
       >
         <h1 className="text-3xl font-bold text-center mb-6">Login</h1>
 
